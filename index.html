@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titi's 22nd Birthday❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">❤️</div>
+            <ul class="nav-links">
+                <li><a href="#slideshow">Photos</a></li>
+                <li><a href="#loveLetter">Love Letter</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Happy Birthday, Riski Darmawan!</h1>
+            <p>You are my everything, here’s a little surprise just for you</p>
+        </div>
+    </header>
+
+    <!-- Slideshow -->
+    <section id="slideshow" class="slideshow">
+        <div class="slides">
+            <img src="asset/3.jpg" alt="Photo 1">
+            <img src="asset/2.jpg" alt="Photo 2">
+            <img src="asset/1.jpg" alt="Photo 3">
+        </div>
+    </section>
+
+    <!-- Love Letter Generator -->
+    <section id="loveLetter" class="love-letter">
+        <h2>Click the Button to Receive a Love Letter!</h2>
+        <h3>(repeat again)</h3>
+        <button onclick="generateLoveLetter()">Get Love Letter</button>
+        <p id="loveLetterText"></p>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="quiz">
+        <h2>How Well Do You Know Us?</h2>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What did I wear on our first date?</p>
+                <label><input type="radio" name="q1" value="a"> Sweater</label>
+                <label><input type="radio" name="q1" value="b"> Cardigan</label>
+            </div>
+            <div class="question">
+                <p>2. Do you love me?</p>
+                <label><input type="radio" name="q2" value="a"> Love you so much!</label>
+                <label><input type="radio" name="q2" value="b"> Not really</label>
+            </div>
+            <button type="button" onclick="checkQuiz()">Submit</button>
+        </form>
+        <br>
+        <div id="quizResult"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

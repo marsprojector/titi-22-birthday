@@ -1,0 +1,160 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6eff6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 5px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+    border-bottom: 3px solid #ffeb3b;
+}
+
+/* Hero Section */
+.hero-content {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #1e3c72;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #2a5298;
+}
+
+/* Slideshow */
+.slideshow {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+}
+
+.slides img {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+}
+
+/* Keyframes for Slideshow */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+/* Love Letter */
+.love-letter {
+    text-align: center;
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2a5298;
+}
+
+#loveLetterText {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #1e3c72;
+}
+
+/* Quiz */
+.quiz {
+    text-align: center;
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+    }
+}
